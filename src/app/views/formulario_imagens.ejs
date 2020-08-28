@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./bootstrap-4.5.2/css/bootstrap.min.css">
+
+  <title>Cadastrar Imagens</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <%- include('partials/navbar.ejs') %>
+
+  <div class="container">
+
+    <div class="card mt-5">
+      <h5 class="card-header bg-primary">Nova Imagem</h5>
+      <div class="card-body">
+        <form action="">
+        <div class="d-flex flex-row">
+          <div class="col-6">
+            <div class="input-group mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="titulo">Titulo</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">@</span>
+              </div>
+              <input type="text" class="form-control" id="titulo" aria-describedby="basic-addon3" placeholder="Digite o titulo da sua imagem">
+            </div>
+              <label for="data">Data</label>
+              <div class="input-group mb-3">
+                <input type="date" class="form-control" id="data" aria-describedby="basic-addon3" placeholder="Digite o titulo da sua imagem">
+              </div>
+              <label for="Descricao">Descrição</label>
+              <div class="input-group mb-3">
+                <textarea type="text" class="form-control" id="Descricao" aria-describedby="basic-addon3" placeholder="Digite sua Descrição"></textarea>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Jquery, Pooper.js e Js do Bootstrap-->
+  <script src="./jquery-3.5.1/jquery-3.5.1.slim.min.js"></script>
+  <script src="./popper-1.16.1/popper-1.16.1.min.js"></script>
+  <script src="./bootstrap-4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
